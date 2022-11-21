@@ -1,0 +1,12 @@
+version: '3.3'
+services:
+  db:
+    image: mariadb
+    restart: always
+    environment:
+      MARIADB_DABATASE: 'db'
+      MARIADB_USER: 'user'
+      MARIADB_PASSWORD: 'password'
+      MARIADB_ROOT_PASSWORD: 'password'
+    ports:
+      - '3306:3306'
